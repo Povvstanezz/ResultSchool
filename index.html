@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Html/css Result.school</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  <hr width="75%" color="yellow">
-   <img src="images/avatar.jpg" alt="Аватар" width="150">
-  <h1>Евгений Кузнецов</h1>
-  
-  <p>Меня зовут Евгений. Сейчас работаю <strong> специалистом по водоподготовке</strong>. Мне <strong>32</strong> года живу в городе <strong>Екатеринбург.</strong></p>
-  <h2>Мои увлечения</h2>
-    <ul>
-      <li>Программирование</li>
-      <li>Чтение</li>
-      <li>Компьютерные игры</li>
-      <li>Туристические прогулки</li>
-      <li>Спорт</li>
-    </ul>
-    <table>
-      <thead>
-        <th>Название организации</th>
-        <th>Должность</th>
-        <th>Период</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>ООО "ВелеЭко"</td>
-          <td>Мастер производства систем водоочистки и водоподготовки"</td>
-          <td>2017-2021</td>
-        </tr>
-        <tr>
-          <td>ООО "СтилсГрупп"</td>
-          <td>Слесарь МСР 3 разряд</td>
-          <td>2022</td>
-      </tbody>
-    </table>
-  <p><em>P.S Учиться никогда не поздно.</em></p>
-  <P><em>P.S.S Я не использую социальные сети.</em></P>
-  <hr width="75%" color="yellow">
-  <h2>Связь со мной</h2>
-  <form action="">
-    <div>
-       <label for="name">Как Вас зовут?</label><br>
-      <input type="text" id="name" placeholder="Введите Ваше имя..">
+
+  <div class="container">
+    <div class="img-block">
+      <img src="images/avatar.jpg" alt="Аватар"></img>
     </div>
-    <div>
-      <label for="email">Ваша электронная почта</label>
-       <input type="email" id="email" placeholder="Укажите Ваш email..">
+
+    <div class="desc-wrap">
+      <div class="name-block">
+        <h1>Евгений Кузнецов</h1>
+      </div>
+
+      <div class="desc-block">
+        <p>Меня зовут Евгений. Сейчас работаю <strong> специалистом по водоподготовке</strong>.
+            Мне <strong>32</strong> года живу в городе <strong>Екатеринбург.</strong>Сейчас
+            прохожу курс <strong>HTML/CSS</strong> в онлайн школе <strong>Result.School</strong>. Планирую стать Full-Stack разработчиком.</p>
+      </div>
+      <div>
+        <ul class="soc-link">
+          <li><a href="#">INSTAGRAM </a>|</li>
+          <li><a href="#">TELEGRAM </a>|</li>
+          <li><a href="#">VK</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <label for="message">Текст Вашего сообщения</label>
-      <textarea cols="30" rows="20" placeholder="Текст Вашего сообщения.."></textarea>
+  </div>
+
+  <div class="container">
+    <h2 class="section-header-text">Мои увлечения</h2>
+      <ul class="image-list">
+        <li>
+            <img src="images/programming.jpeg" alt="">
+            <h3>Программирование</h3>
+        </li>
+        <li>
+            <img src="images/reading.jpg" alt="">
+            <h3>Чтение</h3>
+        </li>
+        <li>
+            <img src="images/games.jpg" alt="">
+            <h3>Компьютерные игры</h3>
+        </li>
+        <li>
+            <img src="images/tourism.jpg" alt="">
+            <h3>Туризм</h3>
+        </li>
+        <li>
+            <img src="images/sport.jpg" alt="">
+            <h3>Спорт</h3>
+        </li>
+        <li>
+            <img src="images/fishing.jpg" alt="">
+            <h3>Рыбалка</h3>
+        </li>
+      </ul>
     </div>
-    <div>
-      <button type="submit">Отправить сообщение</button>
-      <button type="reset">Очистить форму</button>
-      
+
+        <!-- <table>
+          <thead>
+            <th>Название организации</th>
+            <th>Должность</th>
+            <th>Период</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ООО "ВелеЭко"</td>
+              <td>Мастер производства систем водоочистки и водоподготовки"</td>
+              <td>2017-2021</td>
+            </tr>
+            <tr>
+              <td>ООО "СтилсГрупп"</td>
+              <td>Слесарь МСР 3 разряд</td>
+              <td>2022</td>
+          </tbody>
+        </table>
+      <p><em>P.S Учиться никогда не поздно.</em></p>
+      <P><em>P.S.S Я не использую социальные сети.</em></P>
+      <hr width="75%" color="yellow">
+      <h2>Связь со мной</h2>
+      <form action="">
+        <div>
+           <label for="name">Как Вас зовут?</label><br>
+          <input type="text" id="name" placeholder="Введите Ваше имя..">
+        </div>
+        <div>
+          <label for="email">Ваша электронная почта</label>
+           <input type="email" id="email" placeholder="Укажите Ваш email..">
+        </div>
+        <div>
+          <label for="message">Текст Вашего сообщения</label>
+          <textarea cols="30" rows="20" placeholder="Текст Вашего сообщения.."></textarea>
+        </div>
+        <div>
+          <button type="submit">Отправить сообщение</button>
+          <button type="reset">Очистить форму</button>
+
+        </div>
+      </form>
     </div>
-  </form>
+
+
+  </div> -->
+
+
+
+
 </body>
 </html>
